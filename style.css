@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-image: url(venus.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: white;
+}
+
+*{
+  font: bold 14px Lucida Bright;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.header{
+  width: 60%;
+  margin-left: 300px;
+  background: radial-gradient(circle, #93999f 20%, #4c5457);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px #9a9079;
+}
+
+.header h1{
+  font-size: 64px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#calculator{
+  padding: 20px 20px 20px 20px;
+  width: 325px;
+  border-radius: 3px;
+  background: #7c8288;
+  box-shadow: 0px 4px #4c5457;
+  margin: 100px auto 100px auto;
+  text-align: center;
+}
+
+#screen {
+  margin-right: 35px;
+  text-align: right;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  text-shadow: 1px 1px 2px rgba (0, 0, 0, 0.2);
+  color: white;
+  float: right;
+  border-radius: 3px;
+  box-shadow: inset 10px 10px 10px rgba(3, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 212px;
+}
+
+.keys, .top{
+  overflow: hidden;
+}
+
+.keys span, #clear {
+  user-select: none;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  line-height: 36px;
+  text-align: center;
+  margin: 0 7px 11px 0;
+  color: #888;
+  background: white;
+  position: relative;
+  top: 0;
+  float: left;
+  width: 66px;
+  height: 36px;
+}
+
+.keys span.operator{
+  background: #494f55;
+  color: white;
+}
+
+.keys span.eval{
+  background: #c1b08b;
+  box-shadow: 0px 4px #9a9079;
+  color: white;
+}
+
+.keys span.eval:active{
+  box-shadow: 0px 0px #9a9079;
+  top: 4px;
+}
