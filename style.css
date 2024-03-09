@@ -22,6 +22,10 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   min-height: 100vh;
+
+  display: absolute;
+  justify-content: center;
+  align-items: center;
 }
 
 .head-banner,
@@ -169,7 +173,7 @@ body {
   display: none;
   position: absolute;
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, .1);
+  background: rgba(63, 47, 107, .7);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -186,7 +190,7 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
-} 
+}
 
 /* BREAKPOINTS */
 @media (max-width: 992px) {
@@ -247,6 +251,56 @@ body {
   }
 }
 
+/* HOME PAGE */
+.container-hp {
+  transform: translateX(50px);
+  position: relative;
+  width: calc(100% - 100px);
+  min-height: calc(100vh - 280px);
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .05);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.box1 {
+  transform: translateX(-90px);
+  max-width: 1000px;
+  min-width: 780px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .02);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 40px;
+  padding-left: 110px;
+}
+
+.btn-list a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-list {
+  padding: 5px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.btn-list:hover {
+  background: rgba (0, 0, 0, .1);
+}
+
+
 /* PENDAHULUAN */
 .sec-pendahuluan {
   background-image: url(assets/bg/khionebg.jpg);
@@ -254,6 +308,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  display: absolute;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro {
@@ -336,7 +393,7 @@ body {
 }
 
 .content-p2 {
-  transform: translateX(100px);
+  transform: translateX(80px);
   max-width: 700px;
   backdrop-filter: blur(5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, .01);
@@ -413,7 +470,8 @@ h2 {
 }
 
 p,
-li, td {
+li,
+td {
   font-size: 1.1em;
   color: white;
 }
@@ -499,8 +557,7 @@ td {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 40px;
-  padding-left: 110px;
+  padding: 60px;
 }
 
 .content-lp1 {
@@ -541,7 +598,7 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1em;
   color: white;
 }
 
@@ -600,7 +657,42 @@ h3 {
   border-radius: 10px;
 }
 
+  /* accordion */
+  .accordion {
+    background-color: rgba(88, 80, 146, .6);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .05);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: calc(100% - 100px);
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    transition: 0.4s;
+  }
 
+  .active, .accordion:hover {
+    background-color: #4e4592; 
+  }
+
+  .panel {
+    width: calc(100% - 100px);
+    padding: 10px 18px;
+    display: none;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+  }
 
 /* PENUTUP */
 .sec-penutup {
@@ -615,6 +707,8 @@ h3 {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+
 
 /* US */
 
